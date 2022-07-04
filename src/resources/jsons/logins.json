@@ -1,0 +1,18 @@
+[
+    {
+        "grp": "ADM",
+        "id": 19,
+        "stan": "on",
+        "nazwa": "Person",
+        "opis": "Person Monitoring",
+        "login": "admin"
+    },
+    {
+        "grp": "ADM",
+        "id": 23,
+        "stan": "on",
+        "nazwa": "Entity",
+        "opis": "Entity Monitoring",
+        "login": "admin"
+    }
+]

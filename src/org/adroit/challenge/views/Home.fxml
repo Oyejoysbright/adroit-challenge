@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+
+<BorderPane fx:id="homeContainer" prefHeight="400.0" prefWidth="1254.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.adroit.challenge.controllers.HomeController">
+   <top>
+      <HBox prefHeight="45.0" prefWidth="882.0" spacing="10.0" styleClass="title-bar-background" stylesheets="@../../../../resources/stylesheets/project.css" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="versionLabel" prefHeight="45.0" text="ProReport V3.1.9" textFill="WHITE" />
+            <JFXButton focusTraversable="false" prefHeight="45.0" prefWidth="47.0" text="Menu" textFill="WHITE" />
+            <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" spacing="10.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <Label text="Login: owi-grma" textFill="WHITE" />
+                  <Label layoutX="1076.0" layoutY="24.0" text="Date:" textFill="WHITE" />
+                  <Label fx:id="dateLabel" layoutX="1135.0" layoutY="24.0" text="2022-06-29" textFill="WHITE" />
+               </children>
+               <padding>
+                  <Insets right="10.0" />
+               </padding>
+            </HBox>
+         </children>
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+      </HBox>
+   </top>
+   <center>
+      <AnchorPane BorderPane.alignment="TOP_LEFT">
+         <children>
+            <VBox fx:id="cardsVBox" prefHeight="181.0" prefWidth="1332.0" spacing="5.0">
+               <children>
+                  <HBox fx:id="cardsHBox" alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="883.0" spacing="10.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <JFXButton contentDisplay="TOP" focusTraversable="false" prefHeight="72.0" prefWidth="134.0" ripplerFill="#aca3a3" styleClass="home-card" stylesheets="@../../../../resources/stylesheets/project.css" text="Lista Rapotow" HBox.hgrow="ALWAYS">
+                           <graphic>
+                              <ImageView disable="true" fitHeight="56.0" fitWidth="103.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../resources/images/pie%20chart.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton contentDisplay="TOP" focusTraversable="false" layoutX="20.0" layoutY="20.0" prefHeight="72.0" prefWidth="134.0" ripplerFill="#aca3a3" styleClass="home-card" stylesheets="@../../../../resources/stylesheets/project.css" text="Ulubione Rapoty">
+                           <graphic>
+                              <ImageView disable="true" fitHeight="56.0" fitWidth="103.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../resources/images/report.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton contentDisplay="TOP" focusTraversable="false" layoutX="165.0" layoutY="20.0" prefHeight="72.0" prefWidth="134.0" ripplerFill="#aca3a3" styleClass="home-card" stylesheets="@../../../../resources/stylesheets/project.css" text="Lista Pik">
+                           <graphic>
+                              <ImageView disable="true" fitHeight="56.0" fitWidth="103.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../resources/images/shelf.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton fx:id="btnPanele" contentDisplay="TOP" focusTraversable="false" layoutX="310.0" layoutY="20.0" onAction="#onShowLogins" prefHeight="72.0" prefWidth="134.0" ripplerFill="#aca3a3" styleClass="home-card" stylesheets="@../../../../resources/stylesheets/project.css" text="Panele">
+                           <graphic>
+                              <ImageView disable="true" fitHeight="56.0" fitWidth="103.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../resources/images/admins_settings.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton contentDisplay="TOP" focusTraversable="false" layoutX="455.0" layoutY="20.0" prefHeight="72.0" prefWidth="134.0" ripplerFill="#aca3a3" styleClass="home-card" stylesheets="@../../../../resources/stylesheets/project.css" text="Twoje dane">
+                           <graphic>
+                              <ImageView disable="true" fitHeight="56.0" fitWidth="103.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../resources/images/user.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton fx:id="btnLogout" contentDisplay="TOP" focusTraversable="false" layoutX="600.0" layoutY="20.0" onAction="#onLogout" prefHeight="72.0" prefWidth="134.0" ripplerFill="#aca3a3" styleClass="home-card" stylesheets="@../../../../resources/stylesheets/project.css" text="Logout">
+                           <graphic>
+                              <ImageView disable="true" fitHeight="56.0" fitWidth="103.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../resources/images/shutdown.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                     </children>
+                     <padding>
+                        <Insets left="10.0" right="10.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets bottom="20.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <AnchorPane>
+                     <children>
+                        <Line endX="1240.0928955078125" endY="-9.15527380129788E-6" layoutY="0.5000152587890625" startX="118.49288940429688" startY="-9.15527380129788E-6" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                        <Label alignment="CENTER_RIGHT" layoutX="138.0" layoutY="4.5000152587890625" prefHeight="18.0" prefWidth="1102.0" text="Powered By Adroit. Copyright 2022. All right reserved" />
+                     </children>
+                     <VBox.margin>
+                        <Insets left="20.0" right="50.0" />
+                     </VBox.margin>
+                  </AnchorPane>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

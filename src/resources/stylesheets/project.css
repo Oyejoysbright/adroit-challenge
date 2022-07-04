@@ -1,0 +1,46 @@
+/*
+This file is generate by Joysbright for Adroit
+*/
+/* 
+    Created on : Jun 29, 2022, 2:11:38 PM
+    Author     : Ayomide Joysbright Oyediran
+*/
+
+/**
+* Variables
+**/
+* {
+    -fx-main-color: #3e4548;
+    -fx-title-color: #e1e1e1;
+    -fx-table-column-title: #838383;
+}
+
+.home-card {
+    -fx-background-color: #e4e4e5;
+    -fx-border-color: #afafaf;
+    -fx-border-radius: 10;
+    -fx-effect: dropshadow(gaussian, gray, 5, 0, 5, 5);
+}
+
+.top-border {
+    -fx-border-style: solid, none, none, none;
+    -fx-border-width: 1px, 0, 0, 0;
+}
+
+.title-bar-background {
+    -fx-background-color:  -fx-main-color;
+}
+
+.table-title {
+    -fx-pref-height: 50;
+    -fx-background-color: -fx-title-color;
+}
+
+.search-container {
+    -fx-background-color: #cccccc;
+    -fx-border-radius: 10px;
+}
+
+.modal-title, .modal-button {
+    -fx-background-color: -fx-title-color;
+}
