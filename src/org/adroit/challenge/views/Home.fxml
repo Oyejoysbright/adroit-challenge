@@ -104,7 +104,7 @@
                   </HBox>
                   <AnchorPane>
                      <children>
-                        <Line endX="1240.0928955078125" endY="-9.15527380129788E-6" layoutY="0.5000152587890625" startX="118.49288940429688" startY="-9.15527380129788E-6" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                        <Line endX="1358.5858154296875" endY="-6.079673767089844E-6" layoutY="0.5000152587890625" startX="118.49288940429688" startY="-9.15527380129788E-6" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
                         <Label alignment="CENTER_RIGHT" layoutX="138.0" layoutY="4.5000152587890625" prefHeight="18.0" prefWidth="1102.0" text="Powered By Adroit. Copyright 2022. All right reserved" />
                      </children>
                      <VBox.margin>
